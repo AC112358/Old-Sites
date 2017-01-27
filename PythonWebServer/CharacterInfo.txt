@@ -1,0 +1,4 @@
+Korra;160;False,False,False,False;0,0,0,0
+Kyoshi;200;False,False,False,False;0,0,0,0
+Roku;200;False,False,False,False;0,0,0,0
+Aang;200;False,False,False,False;012,0,0,0

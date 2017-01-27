@@ -1,0 +1,3 @@
+0,ron,1234,member
+1,harry,imthebest,moderator
+2,hermione,password1,owner

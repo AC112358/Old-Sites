@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Control Panel</title>
+<link rel = stylesheet type = text/css href = controlPanel.css>
+</head>
+<body>
+<center>
+<h1>Control Panel</h1>
+<table class = controls>
+<tr>
+<td style = width:calc(100%/2)>
+<h2>View Messages</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = viewMessages>
+<input type = hidden name = inputs value = filler>
+<input type = submit value = "View Messages">
+</form>
+</td>
+<td style = width:calc(100%/2)>
+<h2>Send Message</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = sendMessage>
+Username: <!--USERS-->
+<br>Message: 
+<textarea rows = 1 cols = 20 name = inputs style = "resize:none">
+</textarea>
+<input type = submit value = "Send Message to User">
+</form>
+</td>
+</tr>
+<tr>
+<td style=width:calc(100%/2)>
+<h2>See a User's Posts</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = seeUserPosts>
+Username: <!--USERS-->
+<input type = submit value = "See User's Posts (Members+)">
+</form>
+</td>
+<td style=width:calc(100%/2)>
+<h2>See Staff Activity</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = seeStaffActivity>
+Username: <!--USERS-->
+<input type = submit value = "See Staff Activity (Mods+)">
+</form>
+</td>
+</tr>
+<tr>
+<td style = width:calc(100%/2)>
+<h2>View Staff-Only Threads</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = seeReports>
+<input type = hidden name = inputs value = filler>
+<input type = submit value = "See Staff-Only Threads (Mods+)">
+</form>
+</td>
+<td>
+<h2>Make a Staff-Only Thread</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = makeReportThread>
+Name of Staff-Only Thread: <input type = text name = inputs>
+<input type = submit value = "Create Staff-Only Thread (Admins+)">
+</form>
+</td>
+<tr>
+<td style = width:calc(100%/2)>
+<h2>Add Category to Forum</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = addCategory>
+Category name: <input type = text name = inputs>
+<input type= submit value = "Add Category (Admins+)">
+<!--PERMS admin-->
+</form>
+</td>
+<td>
+<h2>Close Thread</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = closeThread>
+<!--THREAD in CATEGORY-->
+Reason for closing thread: <input type = text name = inputs>
+<input type = submit value = "Close Thread">
+</form>
+</td>
+</tr>
+<tr>
+<td style = width:calc(100%/2)>
+<h2>Promote User</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = promoteUser>
+Username: <!--USERS-->
+<input type = submit value = "Promote User (Admins+)">
+</form>
+</td>
+<td>
+<h2>Demote User</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = demoteUser>
+Username: <!--USERS-->
+<input type = submit value = "Demote User (Admins+)">
+</form>
+</td>
+</tr>
+<tr>
+<td>
+<h2>Search Posts</h2>
+<form method = get action = staffControls.py>
+<input type = hidden name = runFunction value = searchPosts>
+Search Term: <input type = text name = inputs> <input type = submit value = "Search">
+</form>
+
+</td>
+</tr>
+</table>
+</center>
+
+
+</body>
+</head>
+</html>
